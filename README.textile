@@ -8,8 +8,6 @@ h2. What is Project Euler?
 
 The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context."
 
-Here i give some possible solutions to Project Euler problems.
-Sometimes it's possible to find an even better solution.
-I don't want to take away from you the joy that is to find the solution to a problem. So use this at your own risk ;).
+Some possible solutions to the Project Euler problems. Sometimes it's possible to find an even better solution.
 
 Cheers.
