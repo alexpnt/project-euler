@@ -24,9 +24,16 @@ def isPanProduct(n):
 			if(multiplier==previous):break									#avoid repetitions	
 			previous=multiplicand
 			pan=mergeIntegers(n,multiplier,multiplicand)					#merge integers
-			if(nLength(pan)==9 and set(str(pan))==set('123456789')):		#be sure its 9 digit lenght
-				print str(n)+" = "+str(multiplier)+"x"+str(multiplicand) 	#solutions
-				return 1
+			if(nLength(pan)==9):											#be sure its 9 digit lenght
+				while(pan!=0):
+					array[pan%10-1]=1 										#mark that position
+					pan/=10
+				if(sum(array)==9):											#check if product is a pandigit	
+					for l in str(mergeIntegers(n,multiplier,multiplicand)):	#check if product doesnt have any 0
+						if(l=='0'):
+							return 0
+					print str(n)+" = "+str(multiplier)+"x"+str(multiplicand) #solutions
+					return 1
 	return 0
 
 

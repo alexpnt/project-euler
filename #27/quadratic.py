@@ -9,8 +9,8 @@ def quadraticPrimes():
 
 	prod=1
 	best=0
-	for i in range(-1000,1001):			#brute force
-		for j in range(-1000,1001):
+	for i in xrange(-1000,1001):			#brute force
+		for j in xrange(-1000,1001):
 			n=0
 			counter=0
 			if((1+i+j)%2==1 and isPrime(j,primes)==1):	 #every prime number, except for 2, is odd. Also, for n=0, b must be prime
@@ -37,12 +37,12 @@ def findPrimes(n):				#generate a list of primes, using the sieve of eratosthene
 
 	primes=(n+2)*[True]
 
-	for i in range(2,int(math.sqrt(n))+1):
+	for i in xrange(2,int(math.sqrt(n))+1):
 		if primes[i]==True:
-			for j in range(i**2,n+1,i):
+			for j in xrange(i**2,n+1,i):
 				primes[j]=False
 
-	primes=[i for i in range(2,len(primes)-1) if primes[i]==True]
+	primes=[i for i in xrange(2,len(primes)-1) if primes[i]==True]
 	return primes
 
 if __name__ == '__main__':
