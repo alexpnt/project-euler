@@ -1,4 +1,4 @@
-h1. Project Euler
+h1. %{color:black}"Project Euler":http://projecteuler.net/%
 
 !http://projecteuler.net/images/euler_portrait.png!
 
