@@ -13,13 +13,14 @@ def generate_non_square_roots(N):
 
 
 #http://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Continued_fraction_expansion
-#obtain a list of triplets (mn, dn, an). The sequence [a0; a1, a2, a3, …] is the continued fraction expansion
+#obtain a list of triplets (mn, dn, an). The sequence [a0; a1, a2, a3,...] is the continued fraction expansion
 def continued_fraction_expansion(n):
 	m_before=0
 	d_before=1
 	a0=a_before=int(floor(sqrt(n)))
 
 	mda_triplets=[]
+	period_lenght=0
 
 	while True:
 
@@ -34,14 +35,16 @@ def continued_fraction_expansion(n):
 			m_before=m_next
 			d_before=d_next
 			a_before=a_next
+			period_lenght+=1
 
-	return mda_triplets
+	return mda_triplets,period_lenght
 
 if __name__ == "__main__":
 	count=0
 	nsr=generate_non_square_roots(10000)
 	for n in nsr:
-		if len(continued_fraction_expansion(n))%2!=0:
+		cfe,l=continued_fraction_expansion(n)
+		if l%2!=0:
 			count+=1
 
-	print count
+	print "There are "+str(count)+" continued fractions with an odd period, for N<=1000"
