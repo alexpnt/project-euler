@@ -16,7 +16,7 @@ Contains some possible solutions to the Project Euler problems. Sometimes it's p
 
 [<img src="https://projecteuler.net/profile/AlexPnt.png">](https://projecteuler.net/friends)
 
-[451260_946001780f2bd2536ea954fd916ef7dc](http://example.net/)
+[451260_946001780f2bd2536ea954fd916ef7dc](https://projecteuler.net/friends)
 
 Cheers.
 
