@@ -7,7 +7,8 @@ from math import sqrt,floor
 #n + floor(1/2 + sqrt(n))
 def non_square_root(n):
 	return n + int(floor(0.5+sqrt(n)))
-
+	
+#Sequence: https://oeis.org/A000037
 def generate_non_square_roots(N):
 	return [non_square_root(i) for i in xrange(1,N+1) if non_square_root(i)<=N]
 
