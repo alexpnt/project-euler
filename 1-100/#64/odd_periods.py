@@ -28,7 +28,7 @@ def continued_fraction_expansion(n):
 		d_next=int((n-m_next**2)/d_before)
 		a_next=int(floor((a0+m_next)/d_next))
 
-		if( ((m_next,d_next,a_next) in mda_triplets) or a_before==2*a0):
+		if(a_before==2*a0 or  ((m_next,d_next,a_next) in mda_triplets)):
 			break
 		else:
 			mda_triplets+=[(m_next,d_next,a_next)]

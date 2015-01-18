@@ -12,7 +12,6 @@ def nLength(n):
 
 #check of this candidate solution fits the description of a magic 5-gon ring
 #[ abc dce feg hgi jib ] becomes [ abcdefghij]  (deleting duplicates)
-
 def is_magic_ring(candidate):
 
 	expected_sum=candidate[0]+candidate[1]+candidate[2]	#sum of the first side

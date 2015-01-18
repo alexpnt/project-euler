@@ -6,7 +6,6 @@ import math
 import random
 import multiprocessing as mp
 
-totient_table={}
 #perform a Modular exponentiation
 def modular_pow(base, exponent, modulus):
     result=1
