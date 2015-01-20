@@ -11,7 +11,7 @@ def isAmicable(a,primes):
 		return 1
 	return 0
 
-def d(n,primes):
+def d(n,primes):	#sum of proper divisors
 
 	prod=1
 	factors=primeFactorization(n,primes);

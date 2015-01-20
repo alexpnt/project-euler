@@ -11,6 +11,7 @@ def countLychrels():
 			count+=1
 			# print i
 	return count
+
 def isLychrel(n):
 
 	iterations=0
@@ -20,5 +21,6 @@ def isLychrel(n):
 			return False
 		iterations+=1
 	return True
+	
 if __name__ == '__main__':
 	print countLychrels()

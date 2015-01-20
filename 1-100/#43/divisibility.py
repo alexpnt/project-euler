@@ -17,6 +17,7 @@ def findSum():
 		if(divisible==True):
 			s+=int(''.join(map(str,p)))		#sum up
 	return s
+	
 def div(d1,d2,d3,divisor):
 	return (d1*100+d2*10+d3)%divisor
 

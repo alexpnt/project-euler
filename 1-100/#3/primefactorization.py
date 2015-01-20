@@ -16,8 +16,6 @@ def calcMaxPrime(n):
 
 def calcNextPrime(p):
 
-	count=0
-
 	while isPrime(p)==0:
 		p+=1
 

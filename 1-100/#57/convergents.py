@@ -22,6 +22,7 @@ def countFractions():
 def nextInnerTerm(num,den):
 	innerTerm=[den,2*den+num]
 	return innerTerm
+	
 def result(num,den):
 	innerTerm=nextInnerTerm(num,den)
 	return [innerTerm[0]+innerTerm[1],innerTerm[1]]

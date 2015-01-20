@@ -25,12 +25,14 @@ def getWordValue(word):
 def isTriangle(x):					#check whether a number is a triangular number or not
 	test=(math.sqrt(8*x+1)+1)
 	return test==int(test)
+
 def genTriangleNumbers(n):
 
 	tri=[]
 	for i in xrange(0,n+1):
 		tri+=[int(0.5*i*(i+1))]
 	return tri
+	
 if __name__ == '__main__':
 
 	print countTriangleWords()
